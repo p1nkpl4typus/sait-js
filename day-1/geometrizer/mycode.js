@@ -17,5 +17,25 @@ var myCircleArea = pi * Math.pow(myCircleRadius, 2);
 
 console.log("The area is", myCircleArea);
 
+// --------------------------------
+/*
+Create 2 functions that calculate properties of a circle, using the definitions here.
+Create a function called calcCircumfrence :
+Pass the radius to the function.
+Calculate the circumference based on the radius, and output "The circumference is NN".
+Create a function called calcArea :
+Pass the radius to the function.
+Calculate the area based on the radius, and output "The area is NN".
+*/
 
+function calcCircumfrence(radius) {
+    console.log("The circumference is " + 2 * pi * radius);
+}
 
+calcCircumfrence(3);
+
+function calcArea(radius) {
+    console.log("The area is " + pi * Math.pow(radius, 2));
+}
+
+calcArea(3);
