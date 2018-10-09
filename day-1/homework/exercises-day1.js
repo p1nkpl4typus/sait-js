@@ -69,5 +69,4 @@ console.log(sumOfLowNumbers(4, 10, 1, 6, 8));
 
 //https://p1nkpl4typus.github.io/sait-js/
 
-
 //8. Commit and push this file to your repository. Submit the URL for Assignment 1 on Brightspace.
