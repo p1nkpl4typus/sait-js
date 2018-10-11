@@ -4,8 +4,6 @@ var newImg = document.createElement("img");
 var mainTitle = document.getElementById("mainTitle");
 var navItems = document.querySelectorAll(".nav-item");
 
-console.log(navItems);
-
 mainContent.appendChild(newImg);
 
 if (Modernizr.geolocation) {
