@@ -30,6 +30,5 @@ for (var i = 0; i < navItems.length; i++) {
         navItem.style.textDecoration = "underline overline";
     } else {
         navItem.style.textTransform = "lowercase";
-        navItem.style.border = "1px solid yellow";
     }
 }
