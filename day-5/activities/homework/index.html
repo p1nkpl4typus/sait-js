@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 5 - Geography Quiz</title>
+    <link rel="stylesheet" href="./mystyles.css">
+</head>
+<body>
+    <h1>Geography Quiz</h1>
+
+    <form action="" name="geoQuiz">
+        <div>
+            <label for="question1">Earth's largest continent is?</label>
+            <input type="text" name="question1" id="question1" required />
+        </div>
+        <div>
+            <fieldset>
+                <legend>What is the capital of Azerbaijan?</legend>
+                <input type="radio" name="capital" id="city1" value="Thimphu" required />
+                <label for="city1">Thimphu</label>
+                <input type="radio" name="capital" id="city2" value="Baku" required />
+                <label for="city2">Baku</label>
+                <input type="radio" name="capital" id="city3" value="Ottawa" required />
+                <label for="city3">Ottawa</label>
+                <input type="radio" name="capital" id="city4" value="Ganja" required />
+                <label for="city4">Ganja</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="question3">How many continents are there?</label>
+            <input type="number" name="question3" id="question3" min="1" max="10" step="1" required />
+        </div>
+        <div>
+            <fieldset>
+                <legend>What is the longest river on Earth?</legend>
+                <input type="radio" name="river" id="river1" value="The Amazon" required />
+                <label for="river1">The Amazon</label>
+                <input type="radio" name="river" id="river2" value="The Thames" required />
+                <label for="river2">The Thames</label>
+                <input type="radio" name="river" id="river3" value="The Yangtze" required />
+                <label for="river3">The Yangtze</label>
+                <input type="radio" name="river" id="river4" value="The Nile" required />
+                <label for="river4">The Nile</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="question5">The largest desert on Earth is the Sahara (True or False?)</label>
+            <select name="question5" id="question5" required />
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit">
+        </div>
+
+    </form>
+    
+    <script src="./mycode.js"></script>
+</body>
+</html>
