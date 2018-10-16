@@ -1,7 +1,7 @@
 var form = $("form");
 
 form.on("submit", function(event) {
-    $("#palette-display").remove(".box");
+    $("div").remove(".box");
 
     var numOfColors = parseInt($("#colorNum").val());
     var hue = $("input[name='colorHue']:checked").val();
