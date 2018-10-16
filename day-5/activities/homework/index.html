@@ -8,56 +8,112 @@
     <link rel="stylesheet" href="./mystyles.css">
 </head>
 <body>
-    <h1>Geography Quiz</h1>
+    <div class=wrapper>
+        <h1>Geography Quiz</h1>
 
-    <form action="" name="geoQuiz">
-        <div>
-            <label for="question1">Earth's largest continent is?</label>
-            <input type="text" name="question1" id="question1" required />
-        </div>
-        <div>
-            <fieldset>
-                <legend>What is the capital of Azerbaijan?</legend>
-                <input type="radio" name="capital" id="city1" value="Thimphu" required />
-                <label for="city1">Thimphu</label>
-                <input type="radio" name="capital" id="city2" value="Baku" required />
-                <label for="city2">Baku</label>
-                <input type="radio" name="capital" id="city3" value="Ottawa" required />
-                <label for="city3">Ottawa</label>
-                <input type="radio" name="capital" id="city4" value="Ganja" required />
-                <label for="city4">Ganja</label>
-            </fieldset>
-        </div>
-        <div>
-            <label for="question3">How many continents are there?</label>
-            <input type="number" name="question3" id="question3" min="1" max="10" step="1" required />
-        </div>
-        <div>
-            <fieldset>
-                <legend>What is the longest river on Earth?</legend>
-                <input type="radio" name="river" id="river1" value="The Amazon" required />
-                <label for="river1">The Amazon</label>
-                <input type="radio" name="river" id="river2" value="The Thames" required />
-                <label for="river2">The Thames</label>
-                <input type="radio" name="river" id="river3" value="The Yangtze" required />
-                <label for="river3">The Yangtze</label>
-                <input type="radio" name="river" id="river4" value="The Nile" required />
-                <label for="river4">The Nile</label>
-            </fieldset>
-        </div>
-        <div>
-            <label for="question5">The largest desert on Earth is the Sahara (True or False?)</label>
-            <select name="question5" id="question5" required />
-                <option value="true">True</option>
-                <option value="false">False</option>
-            </select>
-        </div>
-        <div>
-            <input type="submit" name="submit" id="submit">
-        </div>
+        <div id="quiz">
+            <form action="" name="geoQuiz">
+                <div class="question">
+                    <p>Question One</p>
+                    <label for="question1">Earth's largest continent is?</label>
+                    <input type="text" name="question1" id="question1" required />
+                    <p id="err1" class="err">Please type your answer.</p>
+                </div>
+                <div>
+                    <p>Question Two</p>
+                    <fieldset>
+                        <legend>What is the capital of Azerbaijan?</legend>
+                        <div>                            
+                            <input type="radio" name="capital" id="city1" value="Thimphu" required />
+                            <label for="city1">Thimphu</label>
+                        </div>
+                        <div>                            
+                            <input type="radio" name="capital" id="city2" value="Baku" required />
+                            <label for="city2">Baku</label>
+                        </div>
+                        <div>                            
+                            <input type="radio" name="capital" id="city3" value="Ottawa" required />
+                            <label for="city3">Ottawa</label>
+                        </div>
+                        <div>                            
+                            <input type="radio" name="capital" id="city4" value="Ganja" required />
+                            <label for="city4">Ganja</label>
+                        </div>
+                    </fieldset>
+                    <p id="err2" class="err">Please select an option.</p>
+                </div>
+                <div class="question">
+                    <p>Question Three</p>
+                    <label for="question3">How many continents are there?</label>
+                    <input type="number" name="question3" id="question3" min="1" max="10" step="1" required />
+                    <p id="err3" class="err">Please type your answer (number only).</p>
+                </div>
+                <div>
+                    <p>Question Four</p>
+                    <fieldset>
+                        <legend>What is the longest river on Earth?</legend>
+                        <div>
+                            <input type="radio" name="river" id="river1" value="The Amazon" required />
+                            <label for="river1">The Amazon</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="river" id="river2" value="The Thames" required />
+                            <label for="river2">The Thames</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="river" id="river3" value="The Yangtze" required />
+                            <label for="river3">The Yangtze</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="river" id="river4" value="The Nile" required />
+                            <label for="river4">The Nile</label>
+                        </div>
+                    </fieldset>
+                    <p id="err4" class="err">Please select an option.</p>
+                </div>
+                <div>
+                    <p>Question Five</p>
+                    <label for="question5">The largest desert on Earth is the Sahara (True or False?)</label>
+                    <select name="question5" id="question5" required />
+                        <option></option>
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select>
+                    <p id="err5" class="err">Please select True or False.</p>
+                </div>
+                <div class="button-wrap">
+                    <input type="submit" name="submit" id="submit" class="button">
+                </div>
 
-    </form>
-    
+            </form>
+        </div>
+        <div id="quiz-result">
+            <p id="score"></p>
+            <p class="title">Question One</p>
+            <p>Your Answer: <span id="answer-one" class="your-answer"></span></p>
+            <p>Correct Answer: <span class="correct-answer">Asia</span></p>
+            <p class="fun-fact">At 43,826,647 km<sup>2</sup> or 29.32% of Earth's land mass, Asia is Earth's largest continent. Africa is second largest with 20.32% of Earth's land mass.</p>
+            <p class="title">Question Two</p>
+            <p>Your Answer: <span id="answer-two" class="your-answer"></span></p>
+            <p>Correct Answer: <span class="correct-answer">Baku</span></p>
+            <p class="fun-fact">Baku is Azerbaijan's capital and largest city. It is also the largest city on Earth located below sea level!</p>
+            <p class="title">Question Three</p>
+            <p>Your Answer: <span id="answer-three" class="your-answer"></span></p>
+            <p>Correct Answer: <span class="correct-answer">7</span></p>
+            <p class="fun-fact">Although many geographers and scientists combine Europe and Asia as one continent (as they are one solid land mass), by most standards there are a total of seven continents: Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, and South America.</p>
+            <p class="title">Question Four</p>
+            <p>Your Answer: <span id="answer-four" class="your-answer"></span></p>
+            <p>Correct Answer: <span class="correct-answer">The Nile</span></p>
+            <p class="fun-fact">While there has been many disagreements over the years over which is longer, the Nile has traditionally be considered the longest river on Earth over the Amazon. </p>
+            <p class="title">Question Five</p>
+            <p>Your Answer: <span id="answer-five" class="your-answer"></span></p>
+            <p>Correct Answer: <span class="correct-answer">True</span></p>
+            <p class="fun-fact">Outside of the polar areas, the Sahara Desert is considered the largest on Earth, covering a surface area of 3.5 million square miles.</p>
+            <div class="button-wrap">
+                <button id="again" class="button">Play Again!</button>
+            </div>
+        </div>
+    </div>
     <script src="./mycode.js"></script>
 </body>
 </html>

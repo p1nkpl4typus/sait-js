@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #2323b6
+}
+
+div p:first-of-type {
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    margin: 25px 0;
+    width: 80%;
+    height: 50px;
+    background-color: #2323b6;
+    color: #fff;
+    font-size: 1.2em;
+    border: 1px solid #09095c;
+    border-radius: 5px;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-result,
+#err1,
+#err2,
+#err3,
+#err4,
+#err5 {
+    display: none;
+}
+
+.err {
+	position: relative;
+	background: #ff4d4d;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+.err:after, .err:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.err:after {
+	border-color: rgba(255, 77, 77, 0);
+	border-bottom-color: #ff4d4d;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.err:before {
+	border-color: rgba(255, 0, 0, 0);
+	border-bottom-color: #ff0000;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.correct-answer,
+.your-answer,
+.title {
+    font-weight: bold;
+}
+
+.your-answer {
+    color: #2323b6;
+}
+
+#score {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.fun-fact {
+    font-style: italic;
+}
