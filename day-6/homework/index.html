@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mystyles.css">
+</head>
+<body>
+    
+    <h1>Colour Palette Generator</h1>
+
+    <form action="">
+        <label for="colorNum">How many colours? (Max 5)</label>
+        <input type="number" name="colorNum" id="colorNum" min="1" max="5" step="1" value="1" required />
+
+        <fieldset>
+            <legend>Primary Hue?</legend>
+            <input type="radio" name="colorHue" id="red" value="red" />
+            <label for="red">Red</label>
+            <input type="radio" name="colorHue" id="orange" value="orange" />
+            <label for="orange">Orange</label>
+            <input type="radio" name="colorHue" id="yellow" value="yellow" />
+            <label for="yellow">Yellow</label>
+            <input type="radio" name="colorHue" id="green" value="green" />
+            <label for="green">Green</label>
+            <input type="radio" name="colorHue" id="blue" value="blue" />
+            <label for="blue">Blue</label>
+            <input type="radio" name="colorHue" id="purple" value="purple" />
+            <label for="purple">Purple</label>
+            <input type="radio" name="colorHue" id="pink" value="pink" />
+            <label for="pink">Pink</label>
+            <input type="radio" name="colorHue" id="monochromatic" value="monochromatic" />
+            <label for="monochromatic">Monochromatic</label>
+            <input type="radio" name="colorHue" id="randomHue" value="random" checked />
+            <label for="randomHue">Random!</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Primary Luminosity?</legend>
+            <input type="radio" name="colorLumin" id="light" value="light" />
+            <label for="light">Lighter Colours</label>
+            <input type="radio" name="colorLumin" id="dark" value="dark" />
+            <label for="dark">Darker Colours</label>
+            <input type="radio" name="colorLumin" id="randomLumin" value="random" checked />
+            <label for="randomLumin">Random!</label>
+        </fieldset>
+
+        <input type="submit" name="submit" id="submit" value="Generate Palette!">
+    </form>
+
+    <div id="palette-display"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="./jquery-3.3.1.js"><\/script>');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+    <script src="./js/mycode.js"></script>
+
+</body>
+</html>
