@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Song Lyrics</title>
+    <link rel="stylesheet" href="./mystyles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Song Lyric Generator</h1>
+        
+        <div class="input-wrap">
+            <form action="" id="song-info">
+                <div class="input-group">
+                    <label for="artist">Enter an Artist:</label>
+                    <input type="text" name="artist" id="artist" placeholder="ie. Mother Mother" required/>
+                    <p id="artistErr" class="err">Please enter Artist Name</p>
+                </div>
+                <div class="input-group">
+                    <label for="title">Enter a Song Title:</label>
+                    <input type="text" name="title" id="title" placeholder="ie. Hayloft" required/>
+                    <p id="titleErr" class="err">Please enter Song Title</p>
+                </div>        
+                <div class="input-group">
+                    <input type="submit" name="submit" id="submit" value="Find Lyrics!">
+                </div>
+            </form>
+        </div>
+
+        <div id="lyrics"></div>
+    </div>
+    
+    <script src="./mycode.js"></script>
+</body>
+</html>

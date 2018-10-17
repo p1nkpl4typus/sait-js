@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 1px solid #99fff0;
+    outline-offset: 5px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrap {
+    vertical-align: top;
+    display: flex;
+}
+
+.input-group {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+#lyrics {
+    margin-top: 25px;
+}
+
+.lyric-wrap {
+    border: 1px solid #2ee8cc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+label {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #2ee8cc;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus {
+    border: 1px solid #2ee8cc;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 25px;
+    border: 1px solid #2ee8cc;
+    border-radius: 5px;
+    background: #111;
+    color: #2ee8cc;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ERRORS */
+.main-err {
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    font-size: 1.15em;
+    color: #ff0000;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.err {
+	position: relative;
+	background: #111;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #ff0000;
+    padding: 5px;
+    display: none;
+}
+.err:after, .err:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+    pointer-events: none;
+}
+
+.err:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #111;
+	border-width: 5px;
+	margin-left: -5px;
+
+}
+.err:before {
+	border-color: rgba(255, 0, 0, 0);
+	border-bottom-color: #ff0000;
+	border-width: 6px;
+    margin-left: -6px;
+}
+
