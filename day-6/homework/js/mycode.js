@@ -9,10 +9,6 @@ form.on("submit", function(event) {
 
     event.preventDefault();
 
-    if (!numOfColors || !hue || !lumin) {
-        
-    }
-
     var palette = randomColor({
         count: numOfColors,
         hue: hue,
@@ -22,7 +18,7 @@ form.on("submit", function(event) {
 
     $.each(palette, function(index, value) {
         var color = value;
-        var colorBox = $("<div></div>");
+        var colorBox = $("<div><p>" + value.toUpperCase() + "</p></div>");
         colorBox.addClass("box").css({"background-color": color});
         $("#palette-display").append(colorBox);
     })
