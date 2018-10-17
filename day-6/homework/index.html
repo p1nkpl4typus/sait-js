@@ -8,49 +8,107 @@
     <link rel="stylesheet" href="./mystyles.css">
 </head>
 <body>
+
+    <div class="app">
+            <h1>Colour Palette Generator</h1>
+
+            <form action="">
+                <div class="input-group column">
+                    <label for="colorNum" class="label">How many colours? (Max 5)</label>
+                    <input type="number" name="colorNum" id="colorNum" min="1" max="5" step="1" value="5" required />
+                </div>
+                <fieldset>
+                    <legend>Primary Hue?</legend>
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="red" value="red" class="radio-button red" />
+                            <div class="radio-tile">
+                                <label for="red" class="radio-label">Red</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="orange" value="orange" class="radio-button orange" />
+                            <div class="radio-tile">
+                                <label for="orange" class="radio-label">Orange</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="yellow" value="yellow" class="radio-button yellow" />
+                            <div class="radio-tile">
+                                <label for="yellow" class="radio-label">Yellow</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="green" value="green" class="radio-button green" />
+                            <div class="radio-tile">
+                                <label for="green" class="radio-label">Green</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="blue" value="blue" class="radio-button blue" />
+                            <div class="radio-tile">
+                                <label for="blue" class="radio-label">Blue</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="purple" value="purple" class="radio-button purple" />
+                            <div class="radio-tile">
+                                <label for="purple" class="radio-label">Purple</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="pink" value="pink" class="radio-button pink" />
+                            <div class="radio-tile">
+                                <label for="pink" class="radio-label">Pink</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="monochrome" value="monochrome" class="radio-button mono" />
+                            <div class="radio-tile">
+                                <label for="monochrome" class="radio-label">Mono-<br />chrome</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorHue" id="randomHue" value="random" class="radio-button random-color" checked />
+                            <div class="radio-tile">
+                                <label for="randomHue" class="radio-label">Random!</label>
+                            </div>
+                        </div>         
+                    </div>      
+                    </fieldset>
+        
+                <fieldset>
+                    <legend>Primary Luminosity?</legend>
+                    <div class="input-group">
+                        <div class="input-wrap">
+                            <input type="radio" name="colorLumin" id="light" value="light" class="radio-button lighter" />
+                            <div class="radio-tile">
+                                <label for="light" class="radio-label">Lighter Colours</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorLumin" id="dark" value="dark" class="radio-button darker" />
+                            <div class="radio-tile">
+                                <label for="dark" class="radio-label">Darker Colours</label>
+                            </div>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="radio" name="colorLumin" id="randomLumin" value="random" class="radio-button random-color" checked />
+                            <div class="radio-tile">
+                                <label for="randomLumin" class="radio-label">Random!</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="input-group">
+                    <input type="submit" name="submit" id="submit" value="Generate Palette!">
+                </div>
+            </form>
+    </div>
     
-    <h1>Colour Palette Generator</h1>
-
-    <form action="">
-        <label for="colorNum">How many colours? (Max 5)</label>
-        <input type="number" name="colorNum" id="colorNum" min="1" max="5" step="1" value="1" required />
-
-        <fieldset>
-            <legend>Primary Hue?</legend>
-            <input type="radio" name="colorHue" id="red" value="red" />
-            <label for="red">Red</label>
-            <input type="radio" name="colorHue" id="orange" value="orange" />
-            <label for="orange">Orange</label>
-            <input type="radio" name="colorHue" id="yellow" value="yellow" />
-            <label for="yellow">Yellow</label>
-            <input type="radio" name="colorHue" id="green" value="green" />
-            <label for="green">Green</label>
-            <input type="radio" name="colorHue" id="blue" value="blue" />
-            <label for="blue">Blue</label>
-            <input type="radio" name="colorHue" id="purple" value="purple" />
-            <label for="purple">Purple</label>
-            <input type="radio" name="colorHue" id="pink" value="pink" />
-            <label for="pink">Pink</label>
-            <input type="radio" name="colorHue" id="monochromatic" value="monochrome" />
-            <label for="monochromatic">Monochromatic</label>
-            <input type="radio" name="colorHue" id="randomHue" value="random" checked />
-            <label for="randomHue">Random!</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Primary Luminosity?</legend>
-            <input type="radio" name="colorLumin" id="light" value="light" />
-            <label for="light">Lighter Colours</label>
-            <input type="radio" name="colorLumin" id="dark" value="dark" />
-            <label for="dark">Darker Colours</label>
-            <input type="radio" name="colorLumin" id="randomLumin" value="random" checked />
-            <label for="randomLumin">Random!</label>
-        </fieldset>
-
-        <input type="submit" name="submit" id="submit" value="Generate Palette!">
-    </form>
 
     <div id="palette-display"></div>
+
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
