@@ -42,6 +42,4 @@ prevQuote.addEventListener("click", getPrev);
 
 autoPlay();
 
-tweet.addEventListener("click", function() {
-    tweet.setAttribute("href", 'https://twitter.com/intent/tweet?text=' + '"' + quotes[currentIndex].line + '" ' + quotes[currentIndex].author);
-})
+tweet.addEventListener("click", () => tweet.setAttribute("href", `https://twitter.com/intent/tweet?text="${quotes[currentIndex].line}" ${quotes[currentIndex].author}`));

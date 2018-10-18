@@ -38,7 +38,7 @@ submitBtn.addEventListener("click", function(event) {
         lyricBox.classList.add("lyric-wrap");
         lyricBox.innerHTML = lyrics;
         var lyricTitle = document.createElement("h2");
-        lyricTitle.innerHTML = title + " by " + artist;
+        lyricTitle.innerHTML = `${title} by ${artist}`;
 
         lyricsDisplay.innerHTML = "";
         lyricsDisplay.appendChild(lyricBox);
@@ -56,7 +56,7 @@ submitBtn.addEventListener("click", function(event) {
     function displayErrors(err){
         var songErr = document.createElement("div");
         songErr.classList.add("main-err");
-        songErr.innerHTML = "<p>" + err + "</p><p>Song Not Found - Please Try a New Song</p>";
+        songErr.innerHTML = `<p>${err}</p><p>Song Not Found - Please Try a New Song</p>`;
         lyricsDisplay.innerHTML = "";
         lyricsDisplay.appendChild(songErr);
     }

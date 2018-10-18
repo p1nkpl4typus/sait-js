@@ -1,6 +1,4 @@
-var form = $("form");
-
-form.on("submit", function(event) {
+$("form").on("submit", function(event) {
     $("div").remove(".box");
 
     var numOfColors = parseInt($("#colorNum").val());
@@ -17,9 +15,8 @@ form.on("submit", function(event) {
 
 
     $.each(palette, function(index, value) {
-        var color = value;
         var colorBox = $("<div><p>" + value.toUpperCase() + "</p></div>");
-        colorBox.addClass("box").css({"background-color": color});
+        colorBox.addClass("box").css({"background-color": value});
         $("#palette-display").append(colorBox);
     })
 

@@ -1,27 +1,27 @@
-var result = 0;
 var quiz = document.geoQuiz;
-var submitBtn = quiz.submit;
-var score = document.getElementById("score");
-
-var ansOne = document.getElementById("answer-one");
-var ansTwo = document.getElementById("answer-two");
-var ansThree = document.getElementById("answer-three");
-var ansFour = document.getElementById("answer-four");
-var ansFive = document.getElementById("answer-five");
-
-var errOne = document.getElementById("err1");
-var errTwo = document.getElementById("err2");
-var errThree = document.getElementById("err3");
-var errFour = document.getElementById("err4");
-var errFive = document.getElementById("err5");
-
-var divQuiz = document.getElementById("quiz");
-var divResult = document.getElementById("quiz-result");
-
 var reloadBtn = document.getElementById("again");
+var submitBtn = quiz.submit;
 
 
 function scoreQuiz(event) {
+    var result = 0;
+    var score = document.getElementById("score");
+
+    var ansOne = document.getElementById("answer-one");
+    var ansTwo = document.getElementById("answer-two");
+    var ansThree = document.getElementById("answer-three");
+    var ansFour = document.getElementById("answer-four");
+    var ansFive = document.getElementById("answer-five");
+
+    var errOne = document.getElementById("err1");
+    var errTwo = document.getElementById("err2");
+    var errThree = document.getElementById("err3");
+    var errFour = document.getElementById("err4");
+    var errFive = document.getElementById("err5");
+
+    var divQuiz = document.getElementById("quiz");
+    var divResult = document.getElementById("quiz-result");
+
     var qOne = quiz.question1.value
     var qOneUpperCase = qOne.toUpperCase();
     var qTwo = quiz.capital.value;
