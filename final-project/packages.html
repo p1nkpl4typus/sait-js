@@ -1,0 +1,85 @@
+<!-- Author: Shelagh Storla
+Date: 19 October 2018
+Course: CPNT 262
+FINAL PROJECT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Experts - Book with an Expert!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="./index.html"><i class="fas fa-plane"></i> Travel Experts</a></div>
+        <nav class="mobile-nav">
+            <div id="nav-btn-open" class="nav-btn"><i class="fas fa-bars"></i></div>
+            <div id="menu" class="mobile-nav-links closed" aria-expanded="false">
+                <ul class="navigation">
+                    <li><a href="./packages.html">Vacation Packages</a></li>
+                    <li><a href="./contact.html">Our Team</a></li>
+                    <li><a href="./portal.html" class="btn-link">Client Portal</a></li>
+                    <li><button id="nav-btn-close" class="nav-btn"><i class="fas fa-times"></i> </button></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <ul class="navigation">
+                <li><a href="./packages.html">Vacation Packages</a></li>
+                <li><a href="./contact.html">Our Team</a></li>
+                <li><a href="./portal.html" class="btn-link">Client Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="header-background"></div>
+    <section class="title">
+        <div class="title-content">
+            <h1>Vacation Packages</h1>
+        </div>
+    </section>
+    <div>
+        <img src="./assets/airplane.png" alt="Airplane" id="airplane" style="position:absolute; left: 0;" />
+    </div>
+    <main>
+        <div class="dest-gallery">
+            <div class="image-big default-image" id="nyc-pkg"></div>
+            <div class="image-big default-image" id="rome-pkg"></div>
+            <div class="image-big default-image" id="shanghai-pkg"></div>
+            <div class="image-big default-image" id="sydney-pkg"></div>
+            <div class="image-big default-image" id="venice-pkg"></div>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="location-info">
+            <address>123 Fake Street<br />Fake Town, Fake Place A0A 0A0</address>
+            <p><a href="https://goo.gl/maps/7mgKc6ct1iL2">See Map</a></p>
+            <p>...</p>
+            <p><a href="tel:1-555-555-5555" class="tel">(555) 555-5555</a></p>
+            <p><a href="mailto:info@travelexperts.ca">info@travelexperts.ca</a></p>
+        </div>
+        <div class="social-links">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p>Today's Date: <span id="current-date"></span></p>
+            <p>Copyright 2018 Travel Experts</p>
+        </div>
+    </footer>
+    
+    <script src="./js/scripts.js"></script>
+    <script>
+        airplaneFly();
+        imageChange();
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!-- Author: Shelagh Storla
+Date: 19 October 2018
+Course: CPNT 262
+FINAL PROJECT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Experts - Book with an Expert!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+            <div class="logo"><a href="./index.html"><i class="fas fa-plane"></i> Travel Experts</a></div>
+        <nav class="mobile-nav">
+            <div id="nav-btn-open" class="nav-btn"><i class="fas fa-bars"></i></div>
+            <div id="menu" class="mobile-nav-links closed" aria-expanded="false">
+                <ul class="navigation">
+                    <li><a href="./packages.html">Vacation Packages</a></li>
+                    <li><a href="./contact.html">Our Team</a></li>
+                    <li><a href="./portal.html" class="btn-link">Client Portal</a></li>
+                    <li><button id="nav-btn-close" class="nav-btn"><i class="fas fa-times"></i> </button></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <ul class="navigation">
+                <li><a href="./packages.html">Vacation Packages</a></li>
+                <li><a href="./contact.html">Our Team</a></li>
+                <li><a href="./portal.html" class="btn-link">Client Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header-background"></div>
+    <section class="title">
+    </section>
+    <main>
+        <section>
+        <h3>Already a Client?</h3>
+        <p><a href="#" class="btn-link-alt">Login</a></p>
+        </section>
+        <hr />
+        <section>
+            <h3>New Client?</h3>
+            <p>Contact Us via <a href="tel:1-555-555-5555">phone</a> or start your vacationer profile below and a Travel Expert will be with you within 24 hours!</p>
+        </section>
+        <section class="register-form-section">
+            <p class="note">*All Fields Are Required - unless othewise specified.</p>
+            <div class="register-form-box">
+            <form action="" id="register" class="register-form">
+                <div class="names">
+                    <p class="heading">Names (as per passport)</p>
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" required />
+                    <label for="mid-name">Middle Name(s) -optional-: </label>
+                    <input type="text" name="mid-name" id="mid-name" autocomplete="additional-name" />
+                    <label for="last-name">Last Name(s):</label>
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" required />
+                </div>
+                <div class="address">
+                    <p class="heading">Address</p>
+                    <label for="address">Address Line 1:</label>
+                    <input type="text" name="address" id="address" autocomplete="street-address address-level1" required />
+                    <label for="address2">Address Line 2 -optional-:</label>
+                    <input type="text" name="address2" id="address2" autocomplete="address-level2" />
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" required />
+                    <label for="province">Province:</label>
+                    <input type="text" name="province" id="province" required />
+                    <label for="postal-code">Postal Code :</label>
+                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" title="Format: A#A #A# or A#A-#A#" required />
+                </div>
+                <div class="contact">
+                    <p class="heading">Contact Info</p>
+                    <label for="primary-contact">Primary Contact Number:</label>
+                    <input type="tel" name="primary-contact" id="primary-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555" required />
+                    <label for="secondary-contact">Secondary Contact Number -optional-:</label>
+                    <input type="tel" name="secondary-contact" id="secondary-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555" />
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <input type="submit" name="submit" id="submit">
+            </form>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="location-info">
+            <address>123 Fake Street<br />Fake Town, Fake Place A0A 0A0</address>
+            <p><a href="https://goo.gl/maps/7mgKc6ct1iL2">See Map</a></p>
+            <p>...</p>
+            <p><a href="tel:1-555-555-5555" class="tel">(555) 555-5555</a></p>
+            <p><a href="mailto:info@travelexperts.ca">info@travelexperts.ca</a></p>
+        </div>
+        <div class="social-links">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p>Today's Date: <span id="current-date"></span></p>
+            <p>Copyright 2018 Travel Experts</p>
+        </div>
+    </footer>
+    
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

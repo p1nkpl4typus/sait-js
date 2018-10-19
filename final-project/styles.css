@@ -1,0 +1,518 @@
+/* Author: Shelagh Storla
+Date: 19 October 2018
+Course: CPNT 262
+FINAL PROJECT */
+/* HERO: Photo by Ludovic Fremondiere on Unsplash */
+/* ROME Photo by Willian West on Unsplash */
+/* NEW YORK Photo by Bryan Minear on Unsplash */
+/* SHANGHAI Photo by Li Yang on Unsplash */
+/* SYDNEY Photo by Dan Freeman on Unsplash */
+/* VENICE Photo by Surya Urs on Unsplash */
+/* DEFAULT Photo by Margo Brodowicz on Unsplash */
+/* Airplane by Valérie Poort from the Noun Project */
+@import url('https://fonts.googleapis.com/css?family=Kristi|Open+Sans:300,400,700');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: #f9d622;
+    width: 30%;
+    margin: 35px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.logo a {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Kristi', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.logo i {
+    transform: rotate(-45deg);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+.navigation a:hover {
+    color: #f9d622;
+}
+
+
+.header-background {
+    height: 60px;
+    background: linear-gradient(to right, #f9d622 30%, #333);
+}
+
+.btn-link {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn-link:hover {
+    cursor: pointer;
+    color: #f9d622;
+    border: 2px solid #f9d622;
+}
+
+.btn-link-alt {
+    border: 2px solid #f9d622;
+    border-radius: 20px;
+    padding: 10px;
+    color: #f9d622;
+    text-decoration: none;
+}
+
+.btn-link-alt:hover {
+    cursor: pointer;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.mobile-nav,
+.closed,
+.nav-btn,
+.mobile-nav-links {
+    display: none;
+}
+
+.width {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.hero {
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(249, 214, 34, 0.1), rgba(249, 214, 34, 0.8) ),
+                url("./assets/hero.jpg");
+    background-size: cover;
+    height: 99.9vh;
+}
+
+.hero-content {
+    color: #fff;
+    position: absolute;
+    top: 400px;
+    right: 150px;
+    text-align: center;
+    height: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px -1px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.hero-content h2 {
+    font-family: 'Kristi', cursive;
+    font-size: 6em;
+    font-weight: 300;
+
+}
+
+.hero-content h2,
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.big {
+    font-size: 1.65em;}
+
+.hero-content a {
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 300;
+    color: #f9d622;
+    font-family: 'Kristi', cursive;
+}
+
+#airplane {
+    height: 40px;
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #aaa;
+}
+
+main section {
+    width: 80%;
+}
+
+main section h3 {
+    color: #f9d622;
+    margin: 15px 0;
+    font-size: 6em;
+    font-family: 'Kristi', cursive;
+    font-weight: normal;
+}
+
+main section h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    
+}
+
+.register-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form,
+.names,
+.address,
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.note {
+    color: red;
+}
+
+.register-form,
+.register-form-box,
+.names,
+.address,
+.contact, {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+}
+
+.info p {
+    text-align: justify;
+}
+
+.subscribe p,
+.dest-info p {
+    text-align: center;
+}
+
+.info p,
+.dest-info p,
+.subscribe p {
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.info i {
+    color: #f9d622;
+    text-align: center;
+    font-size: 4em;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dest-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 250px;
+    width: 175px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.image-big {
+    height: 400px;
+    width: 275px;
+    border-radius: 15px;
+    margin: 25px;
+}
+
+.default-image {
+    background-image: url("./assets/default.jpg");
+    background-size: cover;
+    position: 80% 0;
+}
+
+.nyc {
+    background-image: url("./assets/nyc.jpg");
+    background-size: cover;
+}
+.rome {
+    background-image: url("./assets/rome.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+}
+.shanghai {
+    background-image: url("./assets/shanghai.jpg");
+    background-size: cover;
+    background-position: 60% 0;
+}
+.sydney {
+    background-image: url("./assets/sydney.jpg");
+    background-size: cover;
+}
+.venice {
+    background-image: url("./assets/venice.jpg");
+    background-size: cover;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    padding: 3px;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border: 2px solid #f9d622;
+    outline: 2px solid transparent;
+    outline-offset: 4px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    border: 2px solid #f9d622;
+    padding: 3px;
+    border-radius: 20px;
+    margin-top: 25px;
+    color: #f9d622;
+    font-size: 1.25em;
+    font-weight: 700;
+    background: #fff;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #f9d622;
+    color: #fff;
+}
+
+.thank-you {
+    display: none;
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+
+.thank-you p {
+    font-size: 3em;
+    font-family: 'Kristi', cursive;
+    color: #f9d622;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    height: 250px;
+    background-color: #f9d622;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+address {
+    font-style: normal;
+}
+
+.location-info a {
+    color: #fff;
+}
+
+.tel {
+    font-size: 1.4em;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links i {
+    font-size: 2em;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-links i:hover {
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s;
+}
+
+.copyright {
+    align-self: stretch;
+    flex: 1 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1015px) {
+    .nav-btn {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.6em;
+        width: 50%;
+        color: #fff;
+        background: none;
+        border: none;
+        padding: 0 50px;
+     }
+
+     .nav-btn:hover {
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav-links {
+        z-index: 99;
+        display: block;
+        width: 99.99vw;
+        background: #f9d622;
+        height: 99.99vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: all 0.4s ease-in;
+    }
+
+    .closed {
+        transform: translate(-1500px, 0);
+        opacity: 0.5;
+        transition: all 0.4s ease-out;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 25px 0;
+    }
+
+    .navigation a:hover {
+        color: #fff;
+    }
+
+    .navigation .btn-link:hover {
+        border: 2px solid #fff;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 4em;
+    }
+
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .info i {
+        font-size: 2em;
+    }
+
+    #mailer-email {
+        width: 300px;
+    }
+}
